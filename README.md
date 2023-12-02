@@ -1,1 +1,41 @@
-# AirGraffiti
+# Air Graffiti
+
+Problem Statement
+In the domain of digital drawing tools, users often encounter limitations in traditional interfaces, especially when utilizing physical input devices. These tools can be challenging for individuals with limited motor skills or those seeking more intuitive drawing experiences. The objective is to create an inclusive, hands-free drawing platform through "Air Graffiti" that simplifies drawing processes and fosters creativity for all users, regardless of physical capabilities or prior experience.
+
+
+Solution to Problem Statement
+Hand-Tracking Precision: Implement MediaPipe and OpenCV-based hand-tracking algorithms for precise gesture recognition, enabling accurate translation of hand movements into drawing commands.
+
+
+
+IMPLEMENTATION:
+
+Import Necessary Libraries:
+•	Import the required libraries, including OpenCV for image processing and MediaPipe for hand tracking.
+Initialize Hand Tracking Class:
+•	Create a class, let's call it HandwritingRecognizer, to encapsulate hand tracking and recognition functionality.
+Configure Hand Tracking Parameters:
+•	Define parameters for hand tracking, such as model complexity, confidence thresholds, and maximum number of hands to be tracked.
+Initialize Hand Tracking:
+•	Create an instance of the hand tracking class with the specified parameters.
+Capture Video Feed:
+•	Set up a video capture to get frames from the camera.
+Continuous Frame Processing:
+•	Start a loop to continuously process frames from the video feed.
+Hand Tracking:
+•	Use the hand tracking class to identify and track the user's hand in each frame.
+Draw on the Frame:
+•	Display the video frame and allow the user to draw by moving their index finger tip.
+Capture User Input:
+•	Implement logic to capture the drawn shapes, letters, or numbers as the user interacts with the frame.
+Handwriting Recognition Model:
+•	Integrate a handwriting recognition model. This model should be capable of identifying the shapes, alphabets, or numbers drawn by the user.
+Preprocess Image Data:
+•	Preprocess the captured drawing images to ensure they match the input format expected by the recognition model.
+Model Prediction:
+•	Use the trained recognition model to predict the content of the drawn image.
+Display Recognition Result:
+•	Display the recognized alphabet or number on the video frame.
+User Interaction:
+•	Allow the user to interact continuously, drawing different shapes or characters, and observe real-time recognition.
