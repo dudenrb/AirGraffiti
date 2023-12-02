@@ -1,41 +1,35 @@
-# Air Graffiti
+# Air-Writing-and-Character-Recognition
+Basically it's open cv python project where user can draw any alphabets or number in the frame using his index finger tip and after that our model can recognize which alphabets or number is written.
 
-Problem Statement
-In the domain of digital drawing tools, users often encounter limitations in traditional interfaces, especially when utilizing physical input devices. These tools can be challenging for individuals with limited motor skills or those seeking more intuitive drawing experiences. The objective is to create an inclusive, hands-free drawing platform through "Air Graffiti" that simplifies drawing processes and fosters creativity for all users, regardless of physical capabilities or prior experience.
+# How To Run
+1. Make sure you have Already installed Python
+2. First Open the CMD and open this Directory and after that run this command 
 
+    pip install -r requirement.txt
+    
+    after some time all the required packages will be installed
+3. Now run the app.py file
+    
+    python app.py
+   
+   wait for server to run successfully
+4. Goto the browser and open
+    
+    http://127.0.0.1:5000/
+    
+# Screen Shots
+Hand Detect:-
 
-Solution to Problem Statement
-Hand-Tracking Precision: Implement MediaPipe and OpenCV-based hand-tracking algorithms for precise gesture recognition, enabling accurate translation of hand movements into drawing commands.
+![image](https://user-images.githubusercontent.com/59532169/169994824-f118affc-4dfb-4886-803a-c0a6dc57eb06.png) 
 
+Recognize Number:-
 
+![image](https://user-images.githubusercontent.com/59532169/169995398-81ec6310-b0ac-441b-adad-0218b4318705.png)
 
-IMPLEMENTATION:
+Recognize Alphabet:-
 
-Import Necessary Libraries:
-•	Import the required libraries, including OpenCV for image processing and MediaPipe for hand tracking.
-Initialize Hand Tracking Class:
-•	Create a class, let's call it HandwritingRecognizer, to encapsulate hand tracking and recognition functionality.
-Configure Hand Tracking Parameters:
-•	Define parameters for hand tracking, such as model complexity, confidence thresholds, and maximum number of hands to be tracked.
-Initialize Hand Tracking:
-•	Create an instance of the hand tracking class with the specified parameters.
-Capture Video Feed:
-•	Set up a video capture to get frames from the camera.
-Continuous Frame Processing:
-•	Start a loop to continuously process frames from the video feed.
-Hand Tracking:
-•	Use the hand tracking class to identify and track the user's hand in each frame.
-Draw on the Frame:
-•	Display the video frame and allow the user to draw by moving their index finger tip.
-Capture User Input:
-•	Implement logic to capture the drawn shapes, letters, or numbers as the user interacts with the frame.
-Handwriting Recognition Model:
-•	Integrate a handwriting recognition model. This model should be capable of identifying the shapes, alphabets, or numbers drawn by the user.
-Preprocess Image Data:
-•	Preprocess the captured drawing images to ensure they match the input format expected by the recognition model.
-Model Prediction:
-•	Use the trained recognition model to predict the content of the drawn image.
-Display Recognition Result:
-•	Display the recognized alphabet or number on the video frame.
-User Interaction:
-•	Allow the user to interact continuously, drawing different shapes or characters, and observe real-time recognition.
+![image](https://user-images.githubusercontent.com/59532169/169995526-c736abf1-2ba2-4d2a-8a74-01b99ab7b271.png)
+
+Demo Video:-
+
+https://user-images.githubusercontent.com/59532169/169997357-f720a0b4-f534-42fe-9042-764af3b2bb18.mp4
